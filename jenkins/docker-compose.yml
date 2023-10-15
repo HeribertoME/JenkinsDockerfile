@@ -1,0 +1,25 @@
+#  docker compose up -d --build --force-recreate
+services:
+  jenkins:
+    build: ./controller
+    restart: always
+    ports:
+      - "9999:8080"
+      - "50000:50000"
+    volumes:
+      - jenkins-data:/var/jenkins_home:rw
+      - ./casc.d:/var/jenkins_home/casc.d/:ro
+      # Mounting the ssh private key as "container secret" makes it available in JCasc as the variable ${SSH_AGENT_KEY}
+      - ./secrets/id_jenkins.pem:/run/secrets/SSH_AGENT_KEY:ro
+    environment:
+      - JENKINS_EXT_URL=http://localhost:9999
+      - CASC_JENKINS_CONFIG=/var/jenkins_home/casc.d/
+      - org.jenkinsci.plugins.durabletask.BourneShellScript.LAUNCH_DIAGNOSTICS=true
+    networks:
+      - net
+volumes:
+  jenkins-data:
+  #jenkins-agent-data:
+  #android-agent-data:
+networks:
+  net:
