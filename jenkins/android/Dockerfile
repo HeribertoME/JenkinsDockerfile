@@ -2,6 +2,8 @@ FROM jenkins/ssh-agent:latest-jdk17 as ssh-agent
 
 # ca-certificates because curl will need it later on for the Maven installation
 RUN apt-get update && apt-get install -y --no-install-recommends adb build-essential ca-certificates curl file git python3 python3-pip unzip
+# git install
+RUN apt-get -y install git
 
 # Now time to install Maven
 ARG MAVEN_VERSION=3.9.4
