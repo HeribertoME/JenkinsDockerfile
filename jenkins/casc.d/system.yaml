@@ -3,8 +3,8 @@ jenkins:
     local:
       allowsSignup: false # No link to sign up
       users:
-        - id: "admin"
-          password: "butler"
+        - id: "jenkins"
+          password: "jenkins"
   authorizationStrategy: loggedInUsersCanDoAnything
   numExecutors: 0
 unclassified:

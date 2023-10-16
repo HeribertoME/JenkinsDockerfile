@@ -1,0 +1,46 @@
+commit 1d8b3e6e2d1b27f6dc5a7aa534d0b744ac29478e
+tree 63ef5759a5b974792a853a993a5d5bd6ffcaa70d
+parent ae6a7a590bc4a9b8b2f3539c2d6a0b7e77560dcb
+author eargaez <jose.argaez-ext@ab-inbev.com> 2023-09-20 13:30:45 -0600
+committer eargaez <jose.argaez-ext@ab-inbev.com> 2023-09-20 13:30:45 -0600
+
+    Intrumentacion tests
+
+
+:100644 100644 a1e54602e1f04479b000c831c877713101e1fbed 675f286ecb255f43f7b63c57dd60c7b32bba0a8e M	scripts/tests.sh
+commit 12030aaac66e369dbbe50e3f6626b8e0b73f1cba
+tree cfa5368d3fc1f300fa27d18e39332085ac46667a
+parent dd365581920dfd9d432de442d236e5b0629a99b1
+author Heriberto Martinez <heriberto.martinez@sngular.com> 2023-09-19 15:33:45 -0600
+committer Heriberto Martinez <heriberto.martinez@sngular.com> 2023-09-19 15:33:45 -0600
+
+    Remove +x on Jenkinsfile
+
+
+:100644 100644 31de376e8a3cea35e90fe518e28c6c3123d20388 e236c5b17f29caaac7ae43d44d28daaec215c1a8 M	Jenkinsfile
+commit ad98c8ee438224392055ac381231ae1efd3a9caf
+tree 17503d3787635b520069e182f9f1896d5eb7fc06
+parent 126e5c7812af847f527c56dd98c8099ba8b3d8b6
+author eargaez <jose.argaez-ext@ab-inbev.com> 2023-09-15 10:50:14 -0600
+committer eargaez <jose.argaez-ext@ab-inbev.com> 2023-09-15 10:50:14 -0600
+
+    Intrumentacion tests
+
+
+:100644 100644 2483e2282e437bd0d898be2450bf4ec6df273523 5e09b962cb6278d91851f2975ff84b768b622cfc M	app/build.gradle.kts
+:000000 100644 0000000000000000000000000000000000000000 40eb51e13b770a5d7dfbb488993e1515392fd97e A	app/src/androidTest/java/com/example/batterytestapplication/ChangeBGInstrumentedTest.kt
+:000000 100644 0000000000000000000000000000000000000000 85e58e5256251b7341dd42c9d5cb6e8fe8a20ee8 A	app/src/androidTest/java/com/example/batterytestapplication/SwitchLocationInstrumentedTest.kt
+:000000 100644 0000000000000000000000000000000000000000 f43189f6aec2cff7d7decda19cd99943d7ac254b A	app/src/androidTest/java/com/example/batterytestapplication/TimerInstrumentedTest.kt
+:100644 100644 ebbe0da198c8dd90670ee1208f4e6753dbb08314 8975590cc27e5f84811972b27d7b2daf87612ffd M	app/src/main/java/com/example/batterytestapplication/MainActivity.kt
+:100644 100644 a79718e4be85c88213095aae1ae72b80e215845b c0c66216778e7110a7d31e1b41301c5b83203032 M	app/src/main/java/com/example/batterytestapplication/view/TimeView.kt
+:100644 100644 d093cf6b4eee36e9b5d71d525103733b5addf7dc 36ce9b1247619959a323e299601a8756a1d9c56c M	build.gradle.kts
+:100644 100644 3c5031eb7d63f785752b1914cc8692a453d1cc63 b15147d3d9e899f6a0d75192c10b48bea8321da7 M	gradle.properties
+commit 26d492a81d4f53fb5f974e4060ace235da2b6d73
+tree 3e92c6a40f4afeb7e37debb32d2eed3c132b8669
+parent 
+author Heriberto Martinez Elizarraraz <heriberto.martinez-ext@ab-inbev.com> 2023-08-29 09:22:23 -0600
+committer GitHub <noreply@github.com> 2023-08-29 09:22:23 -0600
+
+    Initial commit
+
+:000000 100644 0000000000000000000000000000000000000000 347e252ef10e9c2052ee2017c929530eb0afc5f1 A	.gitignore
