@@ -24,6 +24,7 @@ services:
   android-agent:
     build: ./android
     restart: unless-stopped
+    platform: linux/x86_64
     container_name: android-agent
     volumes:
       - android-agent-data:/home/jenkins:rw

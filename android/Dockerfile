@@ -55,9 +55,9 @@ RUN mkdir -p ${ANDROID_HOME}/cmdline-tools/latest && \
 
 # set the environment variables
 # For amd64
-# ENV JAVA_HOME /usr/lib/jvm/java-${JDK_VERSION}-openjdk-amd64
+ENV JAVA_HOME /usr/lib/jvm/java-${JDK_VERSION}-openjdk-amd64
 # For arm64
-ENV JAVA_HOME /usr/lib/jvm/java-${JDK_VERSION}-openjdk-arm64
+#ENV JAVA_HOME /usr/lib/jvm/java-${JDK_VERSION}-openjdk-arm64
 ENV GRADLE_HOME /opt/gradle
 ENV KOTLIN_HOME /opt/kotlinc
 ENV PATH ${PATH}:${GRADLE_HOME}/bin:${KOTLIN_HOME}/bin:${ANDROID_HOME}/cmdline-tools/latest/bin:${ANDROID_HOME}/cmdline-tools/tools/bin
