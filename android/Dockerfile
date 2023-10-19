@@ -4,7 +4,7 @@
 
 # Base image
 # ---------------------------------------------------------------------- #
-FROM jenkins/ssh-agent:5.12.0-jdk17 as ssh-agent
+FROM jenkins/ssh-agent:latest-jdk17 as ssh-agent
 
 # support multiarch: i386 architecture
 # install Java
@@ -54,19 +54,33 @@ RUN mkdir -p ${ANDROID_HOME}/cmdline-tools/latest && \
     rm ${ANDROID_HOME}/*tools*linux*.zip
 
 # set the environment variables
-# platform linux
+# For amd64
 # ENV JAVA_HOME /usr/lib/jvm/java-${JDK_VERSION}-openjdk-amd64
-# mac M1
+# For arm64
 ENV JAVA_HOME /usr/lib/jvm/java-${JDK_VERSION}-openjdk-arm64
 ENV GRADLE_HOME /opt/gradle
 ENV KOTLIN_HOME /opt/kotlinc
-#ENV PATH ${PATH}:${GRADLE_HOME}/bin:${KOTLIN_HOME}/bin:${ANDROID_HOME}/cmdline-tools/latest/bin:${ANDROID_HOME}/cmdline-tools/tools/bin:${ANDROID_HOME}/platform-tools:${ANDROID_HOME}/emulator
 ENV PATH ${PATH}:${GRADLE_HOME}/bin:${KOTLIN_HOME}/bin:${ANDROID_HOME}/cmdline-tools/latest/bin:${ANDROID_HOME}/cmdline-tools/tools/bin
+
+# accept the license agreements of the SDK components and install sdk components
+ARG ANDROID_BUILD_TOOLS_VERSION=34.0.0
+RUN yes|/usr/local/android-sdk-linux/cmdline-tools/latest/bin/sdkmanager --licenses && \
+    /usr/local/android-sdk-linux/cmdline-tools/latest/bin/sdkmanager --update && \
+    /usr/local/android-sdk-linux/cmdline-tools/latest/bin/sdkmanager --list && \
+    /usr/local/android-sdk-linux/cmdline-tools/latest/bin/sdkmanager "platform-tools" \
+                                                      "ndk;25.2.9519653" \
+                                                      "extras;google;m2repository" \
+                                                      "extras;android;m2repository" \
+                                                      "platforms;android-33" \
+#                                                      "emulator" \
+                                                      "build-tools;$ANDROID_BUILD_TOOLS_VERSION" \
+                                                      "add-ons;addon-google_apis-google-24" \
+                                                      "add-ons;addon-google_apis-google-23"
+
+# set android sdk environment variables
+ENV PATH ${PATH}:${ANDROID_HOME}/platform-tools:${ANDROID_HOME}/emulator
 # WORKAROUND: for issue https://issuetracker.google.com/issues/37137213
-# ENV LD_LIBRARY_PATH ${ANDROID_HOME}/emulator/lib64:${ANDROID_HOME}/emulator/lib64/qt/lib
+ENV LD_LIBRARY_PATH ${ANDROID_HOME}/emulator/lib64:${ANDROID_HOME}/emulator/lib64/qt/lib
 # patch emulator issue: Running as root without --no-sandbox is not supported. See https://crbug.com/638180.
 # https://doc.qt.io/qt-5/qtwebengine-platform-notes.html#sandboxing-support
-# ENV QTWEBENGINE_DISABLE_SANDBOX 1
-
-# accept the license agreements of the SDK components
-RUN yes|/usr/local/android-sdk-linux/cmdline-tools/latest/bin/sdkmanager --licenses
+ENV QTWEBENGINE_DISABLE_SANDBOX 1
