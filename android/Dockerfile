@@ -72,7 +72,7 @@ RUN yes|/usr/local/android-sdk-linux/cmdline-tools/latest/bin/sdkmanager --licen
                                                       "extras;google;m2repository" \
                                                       "extras;android;m2repository" \
                                                       "platforms;android-33" \
-#                                                      "emulator" \
+                                                      "emulator" \
                                                       "build-tools;$ANDROID_BUILD_TOOLS_VERSION" \
                                                       "add-ons;addon-google_apis-google-24" \
                                                       "add-ons;addon-google_apis-google-23" && \
