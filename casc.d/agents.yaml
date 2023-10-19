@@ -1,0 +1,15 @@
+jenkins:
+  nodes:
+    - permanent:
+        labelString: "android"
+        launcher:
+          ssh:
+            credentialsId: "jenkins-agent-ssh-key"
+            host: "agent"
+            port: 22
+            sshHostKeyVerificationStrategy: "nonVerifyingKeyVerificationStrategy"
+        name: "android-agent"
+        nodeDescription: "SSH agent used to execute Android builds"
+        numExecutors: 4
+        remoteFS: "/home/jenkins/agent"
+        retentionStrategy: "always"

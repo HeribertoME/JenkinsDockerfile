@@ -1,0 +1,12 @@
+jenkins:
+  securityRealm:
+    local:
+      allowsSignup: false # No link to sign up
+      users:
+        - id: "jenkins"
+          password: "jenkins"
+  authorizationStrategy: loggedInUsersCanDoAnything
+  numExecutors: 1
+unclassified:
+  location:
+    url: "${JENKINS_EXT_URL}"
