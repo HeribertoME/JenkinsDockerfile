@@ -6,7 +6,7 @@ jenkins:
         - id: "jenkins"
           password: "jenkins"
   authorizationStrategy: loggedInUsersCanDoAnything
-  numExecutors: 1
+  numExecutors: 0
 unclassified:
   location:
     url: "${JENKINS_EXT_URL}"

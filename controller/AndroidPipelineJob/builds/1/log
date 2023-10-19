@@ -1,0 +1,163 @@
+Started by user [8mha:////4JL7ofWaJK1ayWYXUH8sl+efyDHEGrH4vVOXimOdC1VIAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL9rNS87My8YgDGtiJjwgAAAA==[0mjenkins
+Obtained Jenkinsfile from git https://github.com/HeribertoME/Battery-test
+[8mha:////4EXlefHcUwuYemTnTLunwVeE9aFpV6YYS72F5L8SSObHAAAAoh+LCAAAAAAAAP9tjTEOwjAQBM8BClpKHuFItIiK1krDC0x8GCfWnbEdkooX8TX+gCESFVvtrLSa5wtWKcKBo5UdUu8otU4GP9jS5Mixv3geZcdn2TIl9igbHBs2eJyx4YwwR1SwULBGaj0nRzbDRnX6rmuvydanHMu2V1A5c4MHCFXMWcf8hSnC9jqYxPTz/BXAFEIGsfuclm8zQVqFvQAAAA==[0m[Pipeline] Start of Pipeline
+[8mha:////4HBnJfz4LDdvk67zs4AWiqfGfl+m1d20ZNlnEjv54ap/AAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycohUghExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jduZBmjwAAAAA==[0m[Pipeline] node
+Running on [8mha:////4LZWR027RFDQ4Gvkiy/9kmv/IDU0ONNyd3qW/YkjbWHoAAAAph+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzeEgYp/eT83ILSktQi/cS8lKL8zBRVI5fE9NS8En0A+Usbuc8AAAA=[0mandroid-agent in /home/jenkins/agent/workspace/AndroidPipelineJob
+[8mha:////4EY/YAKogsdb4gSgfu4hHatdITsF5nCFa4/RRfa9lhemAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gA0xsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfoP95RwAAAAA==[0m[Pipeline] {
+[8mha:////4AVhtHbTeaQXWvjuTtMXKcajH7FZBDSUeZIkLBstBxuLAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gQkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jc09154wAAAAA==[0m[Pipeline] stage
+[8mha:////4Hr4J+ur724Tf0ekcdH1GN7G4dFwoNObclD7arr0JkLsAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0ggUxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jek7ggRwAAAAA==[0m[Pipeline] { (Declarative: Checkout SCM)
+[8mha:////4Db2WjLLuXW7fUFb5+Ao6EB9WnV2eqmqPjE6zT1xRzuZAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbaWGsbAmNJ0AWEZb8zwLrbuWJvJp3kLiJlZNMMm+a93rDOic4UbLcG+wdZu14DKOti0+U+lugiXu6ck2YKRguzSSpM+cFJRUDS1gDKwEbgzpQdmgLbIVXD9UGhba9lFS/o4DGdQM8gYlqLiqVL8wJdvexy4Q/z18BzLEA29ce4gfg7KmOvAAAAA==[0m[Pipeline] checkout
+Selected Git installation does not exist. Using Default
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/HeribertoME/Battery-test
+ > git init /home/jenkins/agent/workspace/AndroidPipelineJob # timeout=10
+Fetching upstream changes from https://github.com/HeribertoME/Battery-test
+ > git --version # timeout=10
+ > git --version # 'git version 2.39.2'
+ > git fetch --tags --force --progress -- https://github.com/HeribertoME/Battery-test +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/HeribertoME/Battery-test # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+Checking out Revision 937cf9b1be194717160601d9bae1a853326f63f0 (refs/remotes/origin/dev)
+Commit message: "Merge pull request #9 from HeribertoME/lalo"
+First time build. Skipping changelog.
+[8mha:////4NVC4xlvuIlkjRM/XINVJlfIj05HNjZm+AtYtIrSxBrQAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbGRNjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j9Dg2gqvAAAAA==[0m[Pipeline] }
+[8mha:////4Dub6m9rFL8q8efqraxDEhKjKqsC1rj0/x4DbkkGCrUBAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQRbWRhjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j9J+wGOvAAAAA==[0m[Pipeline] // stage
+[8mha:////4L5OtSBeJHZDtfgAQdhfN0SjtVwJGJkSWoA01Irb0DD0AAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQDEh2iorXc8AITG+PEugv2haTiRXyNPxCIRMVWOyut5vmCMic4UPKycdgGzHWQXez91ORAqb1EGmRDZ1kTZopOajdosu44oyZ2MEcUsFCwdFhHygE9w0o15m6qaNBXJ07TtldQBHuDBwg1mdkk/sKYYH3tbSb8ef4KYOwYxI6h2G4+x/INtuQqUcEAAAA=[0m[Pipeline] withEnv
+[8mha:////4MDYrc52l3p33Sl4cSF0kZu0FbYQKTFzk8hov8YC2qAaAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycoiUzoiJNerCCUITQtLo/zZJSSdOxNW4Ay2VmPBg2Zas93pDGQOcKBjuNHYWY2t570czJ54pdDdPmTu68pYwkte80bkhpc9rbShpWFUw2AjYamw9RYsmwU44+ZCVl2iqSwrzdhTArBrgCYWYyUmG9C1TgP19VJHwx/kLgKlPwOrDYvXyLD8BobDcwgAAAA==[0m[Pipeline] {
+[8mha:////4NUtW0UoANAh9QCPZS3XqXm4cRZOScsFPCrrPGw/57s4AAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUZUVMrFEWThCaEJJG/7dJSjpxIq7GHWipxIQHy7ZkvdcbqhjgRMEwp7GzGFvLej+aObFMobt5yszRlbWEkbxmQmdBSp/XKihpWFWUsOGw1dh6ihZNgh138iFrL9HUlxTm7cihtGqAJxR8JicZ0rdMAfb3UUXCH+cvAKY+Qdk0ix2WZ/UBbwyqm8IAAAA=[0m[Pipeline] stage
+[8mha:////4AgNyQBuJ07ZS4G0vOcCjoZIkOZ970llEIAOEdat8CrfAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUwIiYukZZOEFoQkgb/V9+UtqJE3E17kBLJSY8WLYl673eUESGE7ETjcXWY6y96ELvpiQG4vYaaBANXURNGClYoeygyNhqqYqShUVZDisJa4t1oOjRJdjIRj90GTS68px42o4Scm/u8IRMTuSkOX3LyLC99SYS/jh/ATB2CfLdfrbD/Cw+y7kUycIAAAA=[0m[Pipeline] { (Build)
+[8mha:////4GCX9ko+OW1zHEOz+od1PBEYsAdY5t95FtpR8LbYax/fAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiBB2iSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyu3uU/vwBgq0rvS+AAAA[0m[Pipeline] sh
++ set
+AGENT_WORKDIR='/home/jenkins/agent'
+ANDROID_HOME='/usr/local/android-sdk-linux'
+ANDROID_SDK_ROOT='/usr/local/android-sdk-linux'
+BUILD_DISPLAY_NAME='#1'
+BUILD_ID='1'
+BUILD_NUMBER='1'
+BUILD_TAG='jenkins-AndroidPipelineJob-1'
+BUILD_URL='http://localhost:9999/job/AndroidPipelineJob/1/'
+CI='true'
+CMDLINE_TOOLS_HOME='/usr/local/android-sdk-linux/cmdline-tools/latest'
+EXECUTOR_NUMBER='0'
+GIT_BRANCH='origin/dev'
+GIT_COMMIT='937cf9b1be194717160601d9bae1a853326f63f0'
+GIT_URL='https://github.com/HeribertoME/Battery-test'
+GRADLE_HOME='/opt/gradle'
+HOME='/home/jenkins'
+HUDSON_COOKIE='1ed8b395-bae5-4672-92c0-eb00e0cf1e6b'
+HUDSON_HOME='/var/jenkins_home'
+HUDSON_SERVER_COOKIE='b368bfc8e88b575b'
+HUDSON_URL='http://localhost:9999/'
+IFS=' 	
+'
+JAVA_HOME='/usr/lib/jvm/java-17-openjdk-arm64'
+JENKINS_AGENT_HOME='/home/jenkins'
+JENKINS_AGENT_SSH_PUBKEY='ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC9eiog9bhOrB5pNDRqf8t8/zU4P4FlQr92Ft96adsw3xPbJmUTHMlSgH45y9lOt18aFFhbKrtsYhYGbl210nA7ZMoqVGglr1d2WR4ghyj78C0JqDdg3pV63NC9VP2dnuntP3LHjaNC48+NGMgxcKsOOjf5C7wPw+Md7v+WmERA1rE7yd5SypKsQTd2bRrgjjw7D/cEoRTxGSf1mqjumlNsPfRrm/0w+OgyCQZoJ9qBVrf0KdVfJhOgLLeBi4zkqXo23x6K29fsxNLzCbukL7B1GPw+5E1wx16CjRD66zpxhKybHMLHO9CWS5cVt1hD7cPe1pz1lk6ufZtEableJMQIFfbtbGONC8XqSzTDklxGPxkDtNEyeJdbdba9CS/X8dNN0G9qOzAAntQt574oJhsXhhrxt6j1vAcnM2ZRsEL+XbNDSmxnS1GPYlW4pEnf1yls5MMmFvPDpoaYsHjaWDSO3qnYJpqjRa/JhO5WYO6FrgLFVhtky5x0WJwNvRfn+LM= heriberto.martinez@FVFH35GYQ6LT'
+JENKINS_HOME='/var/jenkins_home'
+JENKINS_NODE_COOKIE='75315f82-8b55-496c-b153-f708fe3ec78c'
+JENKINS_SERVER_COOKIE='durable-acbdeabbe8510e8babbe640f88629f26ddf2f978e423cc73db730e197072596d'
+JENKINS_URL='http://localhost:9999/'
+JOB_BASE_NAME='AndroidPipelineJob'
+JOB_DISPLAY_URL='http://localhost:9999/job/AndroidPipelineJob/display/redirect'
+JOB_NAME='AndroidPipelineJob'
+JOB_URL='http://localhost:9999/job/AndroidPipelineJob/'
+KOTLIN_HOME='/opt/kotlinc'
+LC_ALL='C.UTF-8'
+LD_LIBRARY_PATH='/usr/local/android-sdk-linux/emulator/lib64:/usr/local/android-sdk-linux/emulator/lib64/qt/lib'
+LOGNAME='jenkins'
+MOTD_SHOWN='pam'
+NODE_LABELS='android android-agent'
+NODE_NAME='android-agent'
+OLDPWD='/home/jenkins'
+OPTIND='1'
+PATH='/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+PPID='186'
+PS1='$ '
+PS2='> '
+PS4='+ '
+PWD='/home/jenkins/agent/workspace/AndroidPipelineJob'
+QTWEBENGINE_DISABLE_SANDBOX='1'
+RUN_ARTIFACTS_DISPLAY_URL='http://localhost:9999/job/AndroidPipelineJob/1/display/redirect?page=artifacts'
+RUN_CHANGES_DISPLAY_URL='http://localhost:9999/job/AndroidPipelineJob/1/display/redirect?page=changes'
+RUN_DISPLAY_URL='http://localhost:9999/job/AndroidPipelineJob/1/display/redirect'
+RUN_TESTS_DISPLAY_URL='http://localhost:9999/job/AndroidPipelineJob/1/display/redirect?page=tests'
+SHELL='/bin/bash'
+SHLVL='0'
+SSH_CLIENT='172.21.0.3 44774 22'
+SSH_CONNECTION='172.21.0.3 44774 172.21.0.2 22'
+STAGE_NAME='Build'
+USER='jenkins'
+WORKSPACE='/home/jenkins/agent/workspace/AndroidPipelineJob'
+WORKSPACE_TMP='/home/jenkins/agent/workspace/AndroidPipelineJob@tmp'
+_='/usr/bin/java'
++ echo ********************************************************
+********************************************************
++ echo *                                                      *
+*                                                      *
++ echo *   🚀 Iniciando el proceso de construcción 🚀          *
+*   🚀 Iniciando el proceso de construcción 🚀          *
++ echo *                                                      *
+*                                                      *
++ echo ********************************************************
+********************************************************
++ /home/jenkins/agent/workspace/AndroidPipelineJob/gradlew build
+Downloading https://services.gradle.org/distributions/gradle-8.0-bin.zip
+ > git rev-parse refs/remotes/origin/dev^{commit} # timeout=10
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 937cf9b1be194717160601d9bae1a853326f63f0 # timeout=10
+...........10%............20%............30%............40%............50%............60%...........70%............80%............90%............100%
+
+Welcome to Gradle 8.0!
+
+For more details see https://docs.gradle.org/8.0/release-notes.html
+
+Starting a Gradle Daemon (subsequent builds will be faster)
+Checking the license for package Android SDK Build-Tools 33.0.1 in /usr/local/android-sdk-linux/licenses
+License for package Android SDK Build-Tools 33.0.1 accepted.
+Preparing "Install Android SDK Build-Tools 33.0.1 v.33.0.1".
+Warning: Failed to read or create install properties file.
+Checking the license for package Android SDK Platform 34 in /usr/local/android-sdk-linux/licenses
+License for package Android SDK Platform 34 accepted.
+Preparing "Install Android SDK Platform 34 (revision 2)".
+Warning: Failed to read or create install properties file.
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Could not determine the dependencies of task ':app:compileDebugJavaWithJavac'.
+> Failed to install the following SDK components:
+      build-tools;33.0.1 Android SDK Build-Tools 33.0.1
+      platforms;android-34 Android SDK Platform 34
+  The SDK directory is not writable (/usr/local/android-sdk-linux)
+
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 1m 46s
+[8mha:////4AAXudE05b6f+3AhGYDE/TLxzJkyg5dUPJG3UNP5OPYwAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIihKgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcrt/lO7N7BnLt++AAAA[0m[Pipeline] }
+[8mha:////4J3hAX8WpDryUv1/W6uzv3fmyqU4MXyysZQHOrBLtuvSAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiKGgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcrt/lO7N4glvS6+AAAA[0m[Pipeline] // stage
+[8mha:////4IS+0KMxDXGJe2W999IRAWB5W6JBMEhUL1a9zC1XwsmKAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUnRgQE2uUhROEJoSk0f9tkpJOnIircQdaKjHhwbItWe/1hioGOFEwzGnsLMbWst6PZk4sU+hunjJzdGUtYSSvmdBZkNLntQpKGlYVJWw4bDW2nqJFk2DHnXzI2ks09SWFeTtyKK0a4AkFn8lJhvQtU4D9fVSR8Mf5C4CpT1A2zWKH5Vl9ANydZ8vCAAAA[0m[Pipeline] stage
+[8mha:////4Px+KzRwp0rMXdMpbWl7BMSw7mek5tndJphzLGwN1uo1AAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUTCAhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD0rlhNLCAAAA[0m[Pipeline] { (Test)
+Stage "Test" skipped due to earlier failure(s)
+[8mha:////4E+59VQRC0VkR4U3y6ODkNWghlKhw6moKpV+hxXOk0RUAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiOhCiSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwhQ7ndf2r3BkN+Pj++AAAA[0m[Pipeline] }
+[8mha:////4ImCcj3tLxohdIKyBGvM8tA6LiPfHM5o5LykN7FMqup5AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICNBQoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDQMEcr9Ntfu8AGHKGa5vgAAAA==[0m[Pipeline] // stage
+[8mha:////4MXFhQ6fn604WXgrARC9tOOPXWNfqf5o7RedQutTSSxyAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUYUVMrFEWThCSENJG/5ckpZ04EVfjDgQqMeHBsi1Z7/mCJkU4UHSss9h7TNqzIYyuJDZR7C+BJtbRmWnCRMEyaSdJxh6XKilbWFTVsBKwtqgDJY8uw0Z06q7aoNC1pxzLthdQe3ODB1SikLOK+VvmCNvraBLhj/MXAPOQoea82I5/ns0bXGTWLMIAAAA=[0m[Pipeline] stage
+[8mha:////4CpZX/EQ7Qejgd5L8qC3lHGXEwf0SrP/9gscYZtkENLmAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycohUdEVMrFEXThCaEJJG/7dJSjpxIq7GHWipxIQHy7ZkvdcbyhjgRMFwp7GzGFvLez+aOfFMobt5ytzRlbeEkbzmjc4NKX1ea0NJw6qCwUbAVmPrKVo0CXbCyYesvERTXVKYt6MAZtUATyjETE4ypG+ZAuzvo4qEP85fAEx9AlYfFquXZ/kBAsTc3cIAAAA=[0m[Pipeline] { (Analize battery stats)
+Stage "Analize battery stats" skipped due to earlier failure(s)
+[8mha:////4BdueSzeEEF7kK4zz175RtAxsm2/S0Q4yDTAc5L67tZGAAAAox+LCAAAAAAAAP9tjTESwiAURH/iWNhaeggyE0vHypah8QSYIEKY/wkQSeWJvJp3EM2MlVvs7NvmPV+wjgGOFDSzCgeDsTPMu0mXxTKF4eooM0sX1hFGcooJlQX16rSgoKRgSVXDisNGYecoGtQJttzKu2ycRN2cUyjfgUNt+hEeUPFiTjKkL8wBdrepj4Q/z18BzN4nqNv9p9o3Zf21ZL4AAAA=[0m[Pipeline] }
+[8mha:////4HkEPAVVxwvIwPXk4UmbK89TRaYaAhV6CKpfxT2LSxG0AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiEB2iSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwhQ7nbf2r7BmecueC+AAAA[0m[Pipeline] // stage
+[8mha:////4FSfOpHoNKTLinUsD90Eox3xvTsStQd/1G6qv4NSunl1AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKiIFEhqrRWGl5gYmOcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThwM9poGS7Gz6N1o8sKJw3B1PGHPF+yYIjuNrZ5aVrpZsOWkYUlRwkrARlPnOFoyCbailw9ZOUmmOqeQv6OA0qo7PKEQ2ZxkSF+YA+xuo4pMP89fAczeJyj3h1x1/QEBHMgAvgAAAA==[0m[Pipeline] }
+[8mha:////4JzQlK7WqT5adWn2jJoSaNLxwYTYW1hVjdCHts/fTB9NAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICFDQoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDQMEcr9Iddu+wE5XlvxvgAAAA==[0m[Pipeline] // withEnv
+[8mha:////4PBeQ5aiTAbwmhCs4SpRtuz8m/FDJjt74HRddoxxwSSTAAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKREBIFoqK10vACkxjjxLoL9oWk4kV8jT8QEYmKrXammdcbyxRx5OhUY6n1lCqvutC76amBY3sNPKiGL6piShysKu1Qcm1PM5YsFvOyHAuNlaUqcPLkBGvdmIcpgiFXnCVO7qCR+/qOJzI9lcVE+cIYsbn1dWL6df4GMHadIN/uBdnuAzuF8ea9AAAA[0m[Pipeline] }
+[8mha:////4IviRuENOl/zoIjp5WUeowxzyez6RlrNKOdlmaRz9sAOAAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKRoEFCVLRWGl5gEmOcWHfBvpBUvIiv8QciIlGx1c4083pjmSKOHJ1qLLWeUuVVF3o3PTVwbK+BB9XwRVVMiYNVpR1Kru1pxpLFYl6WY6GxslQFTp6cYK0b8zBFMOSKs8TJHTRyX9/xRKanspgoXxgjNre+Tky/zt8Axq4T5Nu9INt9AEmHxfq9AAAA[0m[Pipeline] // node
+[8mha:////4BYCgIlPuQw7Qwd7b1v6zOMczae57Xzc2fjYwQJ1Z9SEAAAAox+LCAAAAAAAAP9tjbEOgjAURS8YB1dHP6IkbMY4uTYsfkGFWgvNe9g+hMkv8tf8B4kkTt7pnrOc1xvrFHHk6FRrqfOUaq/6MLj5qZFjdw08qpYvqmZKHKyq7FhxY08LViwWy7IcK42NpTpw8uQEW92ahymCIVecJc7uoJH75o4nMj2XxUT5whSxuw1NYvp1/gYw9b0gL/eCrPwAb56isL0AAAA=[0m[Pipeline] End of Pipeline
+ERROR: script returned exit code 1
+Finished: FAILURE

@@ -4,17 +4,15 @@ version: "3.9"
 services:
   jenkins:
     build: ./controller
-    privileged: true
-    user: root
+    restart: always
     ports:
       - "9999:8080"
       - "50000:50000"
     container_name: jenkins
     volumes:
-      - jenkins-data:/var/jenkins_home
-      - ./casc.d:/var/jenkins_home/casc.d/
-      - ./var/run/docker.sock:/var/run/docker.sock
-      - ./secrets/jenkins_agent:/run/secrets/SSH_AGENT_KEY # Mounting the ssh private key as "container secret" makes it available in JCasc as the variable ${SSH_AGENT_KEY}
+      - jenkins-data:/var/jenkins_home:rw
+      - ./casc.d:/var/jenkins_home/casc.d/:ro
+      - ./secrets/jenkins_agent:/run/secrets/SSH_AGENT_KEY:ro # Mounting the ssh private key as "container secret" makes it available in JCasc as the variable ${SSH_AGENT_KEY}
     expose:
       - 4444
     networks:
@@ -22,11 +20,13 @@ services:
     environment:
       - JENKINS_EXT_URL=http://localhost:9999
       - CASC_JENKINS_CONFIG=/var/jenkins_home/casc.d/
-  agent:
+      - org.jenkinsci.plugins.durabletask.BourneShellScript.LAUNCH_DIAGNOSTICS=true
+  android-agent:
     build: ./android
-    privileged: true
-    user: root
-    container_name: agent
+    restart: unless-stopped
+    container_name: android-agent
+    volumes:
+      - android-agent-data:/home/jenkins:rw
     expose:
       - 22
     networks:
@@ -35,5 +35,6 @@ services:
       - JENKINS_AGENT_SSH_PUBKEY=ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC9eiog9bhOrB5pNDRqf8t8/zU4P4FlQr92Ft96adsw3xPbJmUTHMlSgH45y9lOt18aFFhbKrtsYhYGbl210nA7ZMoqVGglr1d2WR4ghyj78C0JqDdg3pV63NC9VP2dnuntP3LHjaNC48+NGMgxcKsOOjf5C7wPw+Md7v+WmERA1rE7yd5SypKsQTd2bRrgjjw7D/cEoRTxGSf1mqjumlNsPfRrm/0w+OgyCQZoJ9qBVrf0KdVfJhOgLLeBi4zkqXo23x6K29fsxNLzCbukL7B1GPw+5E1wx16CjRD66zpxhKybHMLHO9CWS5cVt1hD7cPe1pz1lk6ufZtEableJMQIFfbtbGONC8XqSzTDklxGPxkDtNEyeJdbdba9CS/X8dNN0G9qOzAAntQt574oJhsXhhrxt6j1vAcnM2ZRsEL+XbNDSmxnS1GPYlW4pEnf1yls5MMmFvPDpoaYsHjaWDSO3qnYJpqjRa/JhO5WYO6FrgLFVhtky5x0WJwNvRfn+LM= heriberto.martinez@FVFH35GYQ6LT
 volumes:
   jenkins-data:
+  android-agent-data:
 networks:
   net:

@@ -1,0 +1,9 @@
+Started by user [8mha:////4JL7ofWaJK1ayWYXUH8sl+efyDHEGrH4vVOXimOdC1VIAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL9rNS87My8YgDGtiJjwgAAAA==[0mjenkins
+Running as SYSTEM
+Building remotely on [8mha:////4MRjKhGrnHnCjYQo2feH00OOlIHQ0cNPm9BpOcvAN0UyAAAAox+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzeEgZx/eT83ILSktQi/cS8lKL8zBTdxPTUvBIAVV0rR8wAAAA=[0mandroid-agent (android) in workspace /home/jenkins/agent/workspace/FirstJob
+[FirstJob] $ /bin/sh -xe /tmp/jenkins3303238277165364039.sh
++ echo Welcome!!!
+Welcome!!!
++ uname -a
+Linux f8f4eb1d0b49 6.4.16-linuxkit #1 SMP PREEMPT Tue Oct 10 20:38:06 UTC 2023 aarch64 GNU/Linux
+Finished: SUCCESS

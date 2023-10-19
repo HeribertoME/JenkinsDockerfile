@@ -5,7 +5,7 @@ jenkins:
         launcher:
           ssh:
             credentialsId: "jenkins-agent-ssh-key"
-            host: "agent"
+            host: "android-agent"
             port: 22
             sshHostKeyVerificationStrategy: "nonVerifyingKeyVerificationStrategy"
         name: "android-agent"
