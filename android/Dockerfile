@@ -75,9 +75,11 @@ RUN yes|/usr/local/android-sdk-linux/cmdline-tools/latest/bin/sdkmanager --licen
 #                                                      "emulator" \
                                                       "build-tools;$ANDROID_BUILD_TOOLS_VERSION" \
                                                       "add-ons;addon-google_apis-google-24" \
-                                                      "add-ons;addon-google_apis-google-23"
+                                                      "add-ons;addon-google_apis-google-23" && \
+    chown -R jenkins:jenkins $ANDROID_HOME && ls -artl /usr/local/android-sdk-linux
 
 # set android sdk environment variables
+ENV PATH ${PATH}:${ANDROID_HOME}/build-tools/$ANDROID_BUILD_TOOLS_VERSION/
 ENV PATH ${PATH}:${ANDROID_HOME}/platform-tools:${ANDROID_HOME}/emulator
 # WORKAROUND: for issue https://issuetracker.google.com/issues/37137213
 ENV LD_LIBRARY_PATH ${ANDROID_HOME}/emulator/lib64:${ANDROID_HOME}/emulator/lib64/qt/lib
