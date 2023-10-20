@@ -86,3 +86,13 @@ ENV LD_LIBRARY_PATH ${ANDROID_HOME}/emulator/lib64:${ANDROID_HOME}/emulator/lib6
 # patch emulator issue: Running as root without --no-sandbox is not supported. See https://crbug.com/638180.
 # https://doc.qt.io/qt-5/qtwebengine-platform-notes.html#sandboxing-support
 ENV QTWEBENGINE_DISABLE_SANDBOX 1
+
+# install emulator
+ARG EMULATOR_NAME=FirstEmulator
+ARG EMULATOR_ABI="google_apis_playstore/x86_64"
+ARG EMULATOR_IMAGE="system-images;android-34;google_apis_playstore;x86_64"
+RUN yes|/usr/local/android-sdk-linux/cmdline-tools/latest/bin/sdkmanager --install $EMULATOR_IMAGE && \
+    yes|/usr/local/android-sdk-linux/cmdline-tools/latest/bin/sdkmanager --licenses && \
+    echo no|/usr/local/android-sdk-linux/cmdline-tools/latest/bin/avdmanager create avd --force --name $EMULATOR_NAME --abi $EMULATOR_ABI --package $EMULATOR_IMAGE && \
+    chown -R jenkins:jenkins $ANDROID_HOME && ls -artl /usr/local/android-sdk-linux && \
+    chown -R jenkins:jenkins $HOME/.android
