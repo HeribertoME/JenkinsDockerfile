@@ -82,10 +82,10 @@ RUN yes|/usr/local/android-sdk-linux/cmdline-tools/latest/bin/sdkmanager --licen
 ENV PATH ${PATH}:${ANDROID_HOME}/build-tools/$ANDROID_BUILD_TOOLS_VERSION/
 ENV PATH ${PATH}:${ANDROID_HOME}/platform-tools:${ANDROID_HOME}/emulator
 # WORKAROUND: for issue https://issuetracker.google.com/issues/37137213
-ENV LD_LIBRARY_PATH ${ANDROID_HOME}/emulator/lib64:${ANDROID_HOME}/emulator/lib64/qt/lib
+# ENV LD_LIBRARY_PATH ${ANDROID_HOME}/emulator/lib64:${ANDROID_HOME}/emulator/lib64/qt/lib
 # patch emulator issue: Running as root without --no-sandbox is not supported. See https://crbug.com/638180.
 # https://doc.qt.io/qt-5/qtwebengine-platform-notes.html#sandboxing-support
-ENV QTWEBENGINE_DISABLE_SANDBOX 1
+# ENV QTWEBENGINE_DISABLE_SANDBOX 1
 
 # install emulator
 ARG EMULATOR_NAME=FirstEmulator
@@ -94,5 +94,6 @@ ARG EMULATOR_IMAGE="system-images;android-34;google_apis_playstore;x86_64"
 RUN yes|/usr/local/android-sdk-linux/cmdline-tools/latest/bin/sdkmanager --install $EMULATOR_IMAGE && \
     yes|/usr/local/android-sdk-linux/cmdline-tools/latest/bin/sdkmanager --licenses && \
     echo no|/usr/local/android-sdk-linux/cmdline-tools/latest/bin/avdmanager create avd --force --name $EMULATOR_NAME --abi $EMULATOR_ABI --package $EMULATOR_IMAGE && \
+    mv /root/.android/ /home/jenkins/ && \
     chown -R jenkins:jenkins $ANDROID_HOME && ls -artl /usr/local/android-sdk-linux && \
-    chown -R jenkins:jenkins $HOME/.android
+    chown -R jenkins:jenkins /home/jenkins/.android && ls -artl /home/jenkins/

@@ -34,25 +34,25 @@ services:
       - net
     environment:
       - JENKINS_AGENT_SSH_PUBKEY=ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC9eiog9bhOrB5pNDRqf8t8/zU4P4FlQr92Ft96adsw3xPbJmUTHMlSgH45y9lOt18aFFhbKrtsYhYGbl210nA7ZMoqVGglr1d2WR4ghyj78C0JqDdg3pV63NC9VP2dnuntP3LHjaNC48+NGMgxcKsOOjf5C7wPw+Md7v+WmERA1rE7yd5SypKsQTd2bRrgjjw7D/cEoRTxGSf1mqjumlNsPfRrm/0w+OgyCQZoJ9qBVrf0KdVfJhOgLLeBi4zkqXo23x6K29fsxNLzCbukL7B1GPw+5E1wx16CjRD66zpxhKybHMLHO9CWS5cVt1hD7cPe1pz1lk6ufZtEableJMQIFfbtbGONC8XqSzTDklxGPxkDtNEyeJdbdba9CS/X8dNN0G9qOzAAntQt574oJhsXhhrxt6j1vAcnM2ZRsEL+XbNDSmxnS1GPYlW4pEnf1yls5MMmFvPDpoaYsHjaWDSO3qnYJpqjRa/JhO5WYO6FrgLFVhtky5x0WJwNvRfn+LM= heriberto.martinez@FVFH35GYQ6LT
-  emulator:
-    # NOTE: This image should not run in docker on mac or windows
-    # https://github.com/budtmo/docker-android
-    # https://github.com/budtmo/docker-android/blob/master/documentations/CUSTOM_CONFIGURATIONS.md
-    platform: linux/amd64
-    image: budtmo/docker-android:emulator_12.0
-    restart: unless-stopped
-    ports:
-      - 6080:6080 # port to open web https://ip_address:6080
-      - 5554:5554 # port to connect adb
-      - 5555:5555 # port to connect adb
-    environment:
-      - EMULATOR_DEVICE=Nexus One
-      - WEB_VNC=true
-    devices:
-      - /dev/kvm
-    container_name: android-emulator
-    networks:
-      - net
+#  emulator:
+#    # NOTE: This image should not run in docker on mac or windows
+#    # https://github.com/budtmo/docker-android
+#    # https://github.com/budtmo/docker-android/blob/master/documentations/CUSTOM_CONFIGURATIONS.md
+#    platform: linux/amd64
+#    image: budtmo/docker-android:emulator_12.0
+#    restart: unless-stopped
+#    ports:
+#      - 6080:6080 # port to open web https://ip_address:6080
+#      - 5554:5554 # port to connect adb
+#      - 5555:5555 # port to connect adb
+#    environment:
+#      - EMULATOR_DEVICE=Nexus One
+#      - WEB_VNC=true
+#    devices:
+#      - /dev/kvm
+#    container_name: android-emulator
+#    networks:
+#      - net
 volumes:
   jenkins-data:
   android-agent-data:
